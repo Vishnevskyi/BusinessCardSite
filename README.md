@@ -1,1 +1,1 @@
-Вместо FireBaseHosting - https://dashboard.heroku.com/apps/testtaskreactfiredatabaseapp/logs. С FireBaseHosting возникли некоторые проблемы
+Вместо FireBaseHosting - https://testtaskreactfiredatabaseapp.herokuapp.com. С FireBaseHosting возникли некоторые проблемы
