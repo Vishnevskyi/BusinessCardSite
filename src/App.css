@@ -1,0 +1,359 @@
+*{
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 16px;
+  color: #1D201F;
+  line-height: 24px;
+}
+.color
+{
+  background-color: blue;
+}
+.main
+{
+  position: relative;
+  width: 375px;
+  height: 864px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+.imageBlock
+{
+  position: absolute;
+  display: flex;
+  width: 285px;
+  height: 144px;
+  left: 45px;
+  top: 120px;
+}
+.image
+{
+  border-radius: 4px;
+  background-color: #ADE5F4;
+}
+.consultGroup
+{
+  text-align: center;
+}
+.consult
+{
+font-weight: normal;
+text-align: center;
+color: #5B5B5B;
+}
+.time
+{
+font-weight: 600;
+line-height: 24px;
+}
+.title
+{
+position: absolute;
+width: 221px;
+height: 24px;
+left: 77px;
+top: 80px;
+font-weight: bold;
+font-size: 18px;
+text-align: center;
+}
+.textGroup
+{
+  position: absolute;
+  width: 142px;
+  height: 24px;
+  left: 16px;
+  top: 288px;
+  line-height: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #5B5B5B;
+}
+.iconsGroup
+{
+  position: absolute;
+  width: 56px;
+  height: 24px;
+  left: 303px;
+  top: 296px;
+}
+.dateContainer
+{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 8px;
+  position: static;
+  width: 86px;
+  height: 92px;
+  left: 102px;
+  top: 0px;
+  background: #FFFFFF;
+  border: 1px solid #EDEFF2;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 16px;
+}
+.dateActive
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 8px;
+  position: static;
+  width: 86px;
+  height: 92px;
+  left: 102px;
+  top: 0px;
+  background: #F0FBFF;
+  border: 1px solid #33BDE4;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 16px;
+}
+.textDay
+{
+  margin-top: 25px;
+}
+.textActive
+{
+  color: #33BDE4;
+  margin-top: 25px;
+}
+.numActive
+{
+font-weight: bold;
+font-size: 24px;
+line-height: 32px;
+color: #33BDE4;
+}
+.numDay
+{
+font-weight: bold;
+font-size: 24px;
+line-height: 32px;
+}
+.dateBlock
+{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+position: absolute;
+width: 359px;
+height: 92px;
+left: 16px;
+top: 336px;
+overflow-x: scroll;
+}
+.freetime
+{
+position: absolute;
+width: 154px;
+height: 24px;
+left: 16px;
+top: 460px;
+font-weight: 600;
+line-height: 24px;
+text-align: center;
+color: #5B5B5B;
+}
+.timeBlock
+{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+position: absolute;
+width: 359px;
+height: 40px;
+left: 16px;
+top: 500px;
+overflow-x: scroll;
+}
+.textTime
+{
+  position: static;
+  width: 87px;
+  height: 32px;
+  left: 511px;
+  top: 4px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+  text-align: center;
+  color: #C1C1C1;
+}
+.activeTime
+{
+position: static;
+  width: 87px;
+  height: 32px;
+  left: 511px;
+  top: 4px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+  text-align: center;
+  color: #33BDE4;
+  text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.04);
+}
+.outputBlock
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 24px 0px;
+position: absolute;
+width: 343px;
+height: 156px;
+left: 16px;
+top: 572px;
+background: #FFFFFF;
+border: 1px solid #EDEFF2;
+box-sizing: border-box;
+box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.04);
+border-radius: 4px;
+}
+.outputContainer
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  position: static;
+  width: 343px;
+  height: 56px;
+  left: 0px;
+  top: 24px;
+  filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.04));
+  border-radius: 6px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 16px 0px;
+}
+.dateOutput
+{
+position: static;
+width: 120px;
+height: 56px;
+left: 196.5px;
+top: 0px;
+flex: none;
+order: 2;
+flex-grow: 0;
+margin: 0px 24px;
+}
+.timeOutput
+{
+position: static;
+width: 120px;
+height: 56px;
+left: 196.5px;
+top: 0px;
+flex: none;
+order: 2;
+flex-grow: 0;
+margin: 0px 24px;
+}
+.dateOutputText
+{
+position: absolute;
+width: 56px;
+height: 24px;
+left: 58.5px;
+top: 0px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #5B5B5B;
+}
+.timeOutputText
+{
+  position: absolute;
+  width: 56px;
+  height: 24px;
+  left: 228.5px;
+  top: 0px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #5B5B5B;  
+}
+.beetwen
+{
+position: absolute;
+width: 2px;
+height: 56px;
+left: 175.5px;
+top: 0px;
+background: #E6E6E6;
+border-radius: 2px;
+flex: none;
+order: 1;
+}
+.btn
+{
+padding: 10px;
+line-height: 16px;
+position: static;
+width: 319px;
+height: 36px;
+left: 12px;
+font-size: 17px;
+top: 96px;
+margin-top: 1em;
+background: #33BDE4;
+border-radius: 4px;
+color: #FFFFFF;
+border: none;
+}
+.monthes
+{
+position: absolute;
+width: 120px;
+height: 24px;
+left: 26.5px;
+top: 32px;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+}
+.secondHour
+{
+position: absolute;
+width: 120px;
+height: 24px;
+left: 196.5px;
+top: 32px;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+}
