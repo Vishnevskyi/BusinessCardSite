@@ -23,10 +23,10 @@ export let ChangeActiveReduser = (state = initial, action) => {
     switch (action.type) {
         //возвращение дня и числа, выбраного пользователем
         case Change_Active_Date:
-            return {...state, activeDate: [{id: action.num, date: action.day}]}
+            return {...state, activeDate: [{id: action.num, date: action.day}],meeting: [{date: '',time: '', month: '', year: ''}]}
         //возвращение время, выбраного пользователем
         case Change_Active_Time:
-            return {...state, activeTime: [{id: action.id, time: action.time}]}
+            return {...state, activeTime: [{id: action.id, time: action.time}],meeting: [{date: '',time: '', month: '', year: ''}]}
         //возвращение дня и числа, время выбраного пользователем в массив meeting
         case Add_Date: 
             return {...state, meeting: [{date: state.date, time: state.time, month: state.month, year: state.year}]}
