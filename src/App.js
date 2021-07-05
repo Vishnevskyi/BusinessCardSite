@@ -24,16 +24,17 @@ function App() {
   //
   let data = [];
   let daysNum = new Date(variables.currYear, variables.currMonth + 1, 0).getDate(); // количество дней в месяце
+  let week = variables.weekDay;
   // формирование массива дней в месяце
   for (let i = 1; i < daysNum + 1; i++) {
     if (i >= variables.currDay) {
-      if (variables.weekDay > 6) { // если значение дня больше за 6, то есть воскресенье, то день недели принимает id: 1 и пушится в массив
-        variables.weekDay = 1;
+      if (week > 6) { // если значение дня больше за 6, то есть воскресенье, то день недели принимает id: 1 и пушится в массив
+        week = 1;
         data.push({ num: i, day: configs.days[0] });
       }
       else { 
-        data.push({ num: i, day: configs.days[variables.weekDay] });
-        variables.weekDay++;
+        data.push({ num: i, day: configs.days[week] });
+        week++;
       }
     }
   }
