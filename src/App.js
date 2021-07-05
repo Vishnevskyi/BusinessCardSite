@@ -81,7 +81,7 @@ function App() {
           {/* /если выбрано какое то время (activeTime), то класс будет `activeTime` в ином случае, textTime/ */}
           {/* /один dispatch делает onChange в `onActiveReducer` другой dispatch (onChangeTimeActiveActionCreate) добавляет в state какое время мы выбрали/ */}
           {configs.times.map((res) =>
-            <div key={res.id} className={Object.values(timeActive)[0].id === res.id || meeting.time === res.id ? `activeTime` : `textTime`} name={res.time} onClick={() => { dispatch(ChangeTimeActionCreate(res.id)); dispatch(onChangeTimeActiveActionCreate(res.id,res.time)) }}>
+            <div key={res.id} className={Object.values(timeActive)[0].id === res.id || meeting.time === res.id && variables.currDay <= meeting.date ? `activeTime` : `textTime`} name={res.time} onClick={() => { dispatch(ChangeTimeActionCreate(res.id)); dispatch(onChangeTimeActiveActionCreate(res.id,res.time)) }}>
               {res.time}
             </div>)}
         </div>
@@ -90,13 +90,13 @@ function App() {
             <div className="dateOutput">
               <h1 className="dateOutputText">Дата</h1>
               {/* /отображение дня и месяца, какое мы выбрали/ */}
-              <h1 className="monthes">{meeting.date} {meeting.date === '' ? '' : configs.monthes[meeting.month]}</h1>
+              <h1 className="monthes">{meeting.date < variables.currDay ? '' : meeting.date} {meeting.date === ''  || meeting.date < variables.currDay ? '' : configs.monthes[meeting.month]}</h1>
             </div>
             <div className="beetwen" />
             <div className="timeOutput">
               <h1 className="timeOutputText">Время</h1>
               {/* /отображение время, какое мы выбрали/ */}
-              <h1 className="secondHour">{configs.times.map((res)=> res.id === meeting.time ? res.time : '')}</h1>
+              <h1 className="secondHour">{configs.times.map((res)=> res.id === meeting.time && variables.currDay <= meeting.date ? res.time : '')}</h1>
             </div>
           </div>
           <div>
