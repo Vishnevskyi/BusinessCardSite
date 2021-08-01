@@ -1,1 +1,1 @@
-Вместо FireBaseHosting - https://testtaskreactfiredatabaseapp.herokuapp.com. С FireBaseHosting возникли некоторые проблемы
+https://testtaskreactfirebase.web.app/
